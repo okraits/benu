@@ -2,9 +2,9 @@
 # by Victor Nilsson
 #
 
-$FONT = "XFT#Sans:size=9"
-$MENUFONT = "XFT#Sans:size=9"
-$WORKSPACE_FONT = "XFT#Sans:size=11"
+$FONT = "Sans:size=9"
+$MENUFONT = "Sans:size=9"
+$WORKSPACE_FONT = "Sans:size=11"
 
 $TITLETEXT_FO_0 = "#000000"
 $TITLETEXT_FO_1 = "#B58200"
@@ -239,4 +239,20 @@ WorkspaceIndicator {
 	Text = "#000000"
 	EdgePadding = "5"
 	WorkspacePadding = "2"
+}
+
+Panel {
+	Background = "SolidRaised $PANELBG $PANELSHADOW $PANELSHADOW 1 0"
+	Focused {
+		Font = "$FONT#Center"
+		Color = "#000000"
+	}
+	Unfocused {
+		Font = "$FONT#Center"
+		Color = "#222222"
+	}
+	Iconified {
+		Font = "$FONT#Center"
+		Color = "#444444"
+	}
 }
